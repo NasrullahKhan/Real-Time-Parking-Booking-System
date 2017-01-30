@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		587B072262D97041C3037299 /* Pods_RealTimeParkingBookingSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4877408D94E8BF5BEB7A6E /* Pods_RealTimeParkingBookingSystem.framework */; };
+		5F8754C11E3AFEED00640A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754C01E3AFEED00640A24 /* AppDelegate.swift */; };
+		5F8754C61E3AFEED00640A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8754C41E3AFEED00640A24 /* Main.storyboard */; };
+		5F8754C81E3AFEED00640A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8754C71E3AFEED00640A24 /* Assets.xcassets */; };
+		5F8754CB1E3AFEED00640A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8754C91E3AFEED00640A24 /* LaunchScreen.storyboard */; };
+		5F8754D61E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754D51E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.swift */; };
+		5F8754E11E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754E01E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.swift */; };
+		5F8754EF1E3AFF2600640A24 /* MConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754EE1E3AFF2600640A24 /* MConstant.swift */; };
+		5F8754F11E3AFF3300640A24 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754F01E3AFF3300640A24 /* SignIn.swift */; };
+		5F8754F61E3AFFEC00640A24 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754F51E3AFFEC00640A24 /* SignUp.swift */; };
+		5F8754F81E3B019400640A24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F8754F71E3B019400640A24 /* GoogleService-Info.plist */; };
+		5F8754FC1E3B0B1900640A24 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754FB1E3B0B1900640A24 /* AuthService.swift */; };
+		5F8754FE1E3B0B4100640A24 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754FD1E3B0B4100640A24 /* User.swift */; };
+		5F8755001E3B0B4B00640A24 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754FF1E3B0B4B00640A24 /* UserType.swift */; };
+		5FDCC3A61E3B10AA00D59B23 /* UserMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3A51E3B10AA00D59B23 /* UserMainController.swift */; };
+		5FDCC3A81E3B10C900D59B23 /* ParkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3A71E3B10C900D59B23 /* ParkingCell.swift */; };
+		5FDCC3AA1E3B139D00D59B23 /* ParkingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3A91E3B139D00D59B23 /* ParkingArea.swift */; };
+		5FDCC3AC1E3B149800D59B23 /* ParkingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3AB1E3B149800D59B23 /* ParkingServices.swift */; };
+		5FDCC3AE1E3B183100D59B23 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3AD1E3B183100D59B23 /* Slot.swift */; };
+		5FDCC3B01E3B385B00D59B23 /* SlotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3AF1E3B385B00D59B23 /* SlotsViewController.swift */; };
+		5FDCC3B21E3B38D500D59B23 /* SlotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3B11E3B38D500D59B23 /* SlotCell.swift */; };
+		5FDCC3B41E3BF97500D59B23 /* UserRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3B31E3BF97500D59B23 /* UserRequestsViewController.swift */; };
+		5FDCC3B61E3BF99900D59B23 /* UserRequestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3B51E3BF99900D59B23 /* UserRequestsCell.swift */; };
+		5FDCC3B81E3BFCBC00D59B23 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3B71E3BFCBC00D59B23 /* UserServices.swift */; };
+		5FDCC3BA1E3C1B3900D59B23 /* UserRequestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3B91E3C1B3900D59B23 /* UserRequestStruct.swift */; };
+		5FDCC3BD1E3C24F700D59B23 /* AllUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3BC1E3C24F700D59B23 /* AllUserController.swift */; };
+		5FDCC3BF1E3C250E00D59B23 /* AllUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3BE1E3C250E00D59B23 /* AllUserCell.swift */; };
+		5FDCC3C11E3C5B1200D59B23 /* UserFeedbackSubmissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3C01E3C5B1200D59B23 /* UserFeedbackSubmissionVC.swift */; };
+		5FDCC3C31E3C5D6000D59B23 /* AdminFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3C21E3C5D6000D59B23 /* AdminFeedbackViewController.swift */; };
+		5FDCC3C51E3C5D7900D59B23 /* AdminFeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3C41E3C5D7900D59B23 /* AdminFeedbackTableViewCell.swift */; };
+		5FDCC3C71E3C5EEA00D59B23 /* AdminServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDCC3C61E3C5EEA00D59B23 /* AdminServices.swift */; };
+		95CDC891BB013511E8EACBCF /* Pods_RealTimeParkingBookingSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4836881A2DA1571327AB70F5 /* Pods_RealTimeParkingBookingSystemTests.framework */; };
+		9EED6E7E5FE7828FDBF09250 /* Pods_RealTimeParkingBookingSystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081692738A472D97DEDBB83C /* Pods_RealTimeParkingBookingSystemUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F8754D21E3AFEED00640A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F8754B51E3AFEED00640A24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F8754BC1E3AFEED00640A24;
+			remoteInfo = RealTimeParkingBookingSystem;
+		};
+		5F8754DD1E3AFEED00640A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F8754B51E3AFEED00640A24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F8754BC1E3AFEED00640A24;
+			remoteInfo = RealTimeParkingBookingSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081692738A472D97DEDBB83C /* Pods_RealTimeParkingBookingSystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeParkingBookingSystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4877408D94E8BF5BEB7A6E /* Pods_RealTimeParkingBookingSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeParkingBookingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4836881A2DA1571327AB70F5 /* Pods_RealTimeParkingBookingSystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeParkingBookingSystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		567FD3CB9849D78EC0476944 /* Pods-RealTimeParkingBookingSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystemTests/Pods-RealTimeParkingBookingSystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F8754BD1E3AFEED00640A24 /* RealTimeParkingBookingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeParkingBookingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8754C01E3AFEED00640A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F8754C51E3AFEED00640A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F8754C71E3AFEED00640A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F8754CA1E3AFEED00640A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F8754CC1E3AFEED00640A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8754D11E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeParkingBookingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8754D51E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeParkingBookingSystemTests.swift; sourceTree = "<group>"; };
+		5F8754D71E3AFEED00640A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8754DC1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeParkingBookingSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8754E01E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeParkingBookingSystemUITests.swift; sourceTree = "<group>"; };
+		5F8754E21E3AFEED00640A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8754EE1E3AFF2600640A24 /* MConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstant.swift; sourceTree = "<group>"; };
+		5F8754F01E3AFF3300640A24 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		5F8754F51E3AFFEC00640A24 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		5F8754F71E3B019400640A24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F8754FB1E3B0B1900640A24 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5F8754FD1E3B0B4100640A24 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F8754FF1E3B0B4B00640A24 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		5FDCC3A51E3B10AA00D59B23 /* UserMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMainController.swift; sourceTree = "<group>"; };
+		5FDCC3A71E3B10C900D59B23 /* ParkingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingCell.swift; sourceTree = "<group>"; };
+		5FDCC3A91E3B139D00D59B23 /* ParkingArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingArea.swift; sourceTree = "<group>"; };
+		5FDCC3AB1E3B149800D59B23 /* ParkingServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingServices.swift; sourceTree = "<group>"; };
+		5FDCC3AD1E3B183100D59B23 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		5FDCC3AF1E3B385B00D59B23 /* SlotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotsViewController.swift; sourceTree = "<group>"; };
+		5FDCC3B11E3B38D500D59B23 /* SlotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotCell.swift; sourceTree = "<group>"; };
+		5FDCC3B31E3BF97500D59B23 /* UserRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestsViewController.swift; sourceTree = "<group>"; };
+		5FDCC3B51E3BF99900D59B23 /* UserRequestsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestsCell.swift; sourceTree = "<group>"; };
+		5FDCC3B71E3BFCBC00D59B23 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		5FDCC3B91E3C1B3900D59B23 /* UserRequestStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestStruct.swift; sourceTree = "<group>"; };
+		5FDCC3BC1E3C24F700D59B23 /* AllUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllUserController.swift; sourceTree = "<group>"; };
+		5FDCC3BE1E3C250E00D59B23 /* AllUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllUserCell.swift; sourceTree = "<group>"; };
+		5FDCC3C01E3C5B1200D59B23 /* UserFeedbackSubmissionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedbackSubmissionVC.swift; sourceTree = "<group>"; };
+		5FDCC3C21E3C5D6000D59B23 /* AdminFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminFeedbackViewController.swift; sourceTree = "<group>"; };
+		5FDCC3C41E3C5D7900D59B23 /* AdminFeedbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminFeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		5FDCC3C61E3C5EEA00D59B23 /* AdminServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminServices.swift; sourceTree = "<group>"; };
+		98E4003C5F1D60DE5C45E136 /* Pods-RealTimeParkingBookingSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystem/Pods-RealTimeParkingBookingSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		9937E879E6D3CB1014E22ED3 /* Pods-RealTimeParkingBookingSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystemTests/Pods-RealTimeParkingBookingSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C94AD6D0570E65C2FD051EAA /* Pods-RealTimeParkingBookingSystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystemUITests/Pods-RealTimeParkingBookingSystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEB196F7F63A6F7D321C9A81 /* Pods-RealTimeParkingBookingSystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystemUITests/Pods-RealTimeParkingBookingSystemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5F2F0253BBCA62630C3A2DB /* Pods-RealTimeParkingBookingSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeParkingBookingSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeParkingBookingSystem/Pods-RealTimeParkingBookingSystem.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F8754BA1E3AFEED00640A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587B072262D97041C3037299 /* Pods_RealTimeParkingBookingSystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754CE1E3AFEED00640A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CDC891BB013511E8EACBCF /* Pods_RealTimeParkingBookingSystemTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754D91E3AFEED00640A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EED6E7E5FE7828FDBF09250 /* Pods_RealTimeParkingBookingSystemUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F8754B41E3AFEED00640A24 = {
+			isa = PBXGroup;
+			children = (
+				5F8754BF1E3AFEED00640A24 /* RealTimeParkingBookingSystem */,
+				5F8754D41E3AFEED00640A24 /* RealTimeParkingBookingSystemTests */,
+				5F8754DF1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests */,
+				5F8754BE1E3AFEED00640A24 /* Products */,
+				720A3BCE69A273F51C808A7D /* Pods */,
+				9CC995174459EE44E45448BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F8754BE1E3AFEED00640A24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754BD1E3AFEED00640A24 /* RealTimeParkingBookingSystem.app */,
+				5F8754D11E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.xctest */,
+				5F8754DC1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F8754BF1E3AFEED00640A24 /* RealTimeParkingBookingSystem */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754F41E3AFF4D00640A24 /* Services */,
+				5F8754F31E3AFF4400640A24 /* Models */,
+				5F8754C01E3AFEED00640A24 /* AppDelegate.swift */,
+				5F8754F21E3AFF3B00640A24 /* Login Controllers */,
+				5FDCC3A41E3B103C00D59B23 /* User Controllers */,
+				5FDCC3BB1E3C24D100D59B23 /* Admin Controllers */,
+				5F8754C41E3AFEED00640A24 /* Main.storyboard */,
+				5F8754C71E3AFEED00640A24 /* Assets.xcassets */,
+				5F8754EE1E3AFF2600640A24 /* MConstant.swift */,
+				5F8754C91E3AFEED00640A24 /* LaunchScreen.storyboard */,
+				5F8754CC1E3AFEED00640A24 /* Info.plist */,
+				5F8754F71E3B019400640A24 /* GoogleService-Info.plist */,
+			);
+			path = RealTimeParkingBookingSystem;
+			sourceTree = "<group>";
+		};
+		5F8754D41E3AFEED00640A24 /* RealTimeParkingBookingSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754D51E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.swift */,
+				5F8754D71E3AFEED00640A24 /* Info.plist */,
+			);
+			path = RealTimeParkingBookingSystemTests;
+			sourceTree = "<group>";
+		};
+		5F8754DF1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754E01E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.swift */,
+				5F8754E21E3AFEED00640A24 /* Info.plist */,
+			);
+			path = RealTimeParkingBookingSystemUITests;
+			sourceTree = "<group>";
+		};
+		5F8754F21E3AFF3B00640A24 /* Login Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754F01E3AFF3300640A24 /* SignIn.swift */,
+				5F8754F51E3AFFEC00640A24 /* SignUp.swift */,
+			);
+			name = "Login Controllers";
+			sourceTree = "<group>";
+		};
+		5F8754F31E3AFF4400640A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754FD1E3B0B4100640A24 /* User.swift */,
+				5F8754FF1E3B0B4B00640A24 /* UserType.swift */,
+				5FDCC3A91E3B139D00D59B23 /* ParkingArea.swift */,
+				5FDCC3AD1E3B183100D59B23 /* Slot.swift */,
+				5FDCC3B91E3C1B3900D59B23 /* UserRequestStruct.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5F8754F41E3AFF4D00640A24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F8754FB1E3B0B1900640A24 /* AuthService.swift */,
+				5FDCC3AB1E3B149800D59B23 /* ParkingServices.swift */,
+				5FDCC3B71E3BFCBC00D59B23 /* UserServices.swift */,
+				5FDCC3C61E3C5EEA00D59B23 /* AdminServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		5FDCC3A41E3B103C00D59B23 /* User Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC3A51E3B10AA00D59B23 /* UserMainController.swift */,
+				5FDCC3A71E3B10C900D59B23 /* ParkingCell.swift */,
+				5FDCC3AF1E3B385B00D59B23 /* SlotsViewController.swift */,
+				5FDCC3B11E3B38D500D59B23 /* SlotCell.swift */,
+				5FDCC3B31E3BF97500D59B23 /* UserRequestsViewController.swift */,
+				5FDCC3B51E3BF99900D59B23 /* UserRequestsCell.swift */,
+				5FDCC3C01E3C5B1200D59B23 /* UserFeedbackSubmissionVC.swift */,
+			);
+			name = "User Controllers";
+			sourceTree = "<group>";
+		};
+		5FDCC3BB1E3C24D100D59B23 /* Admin Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FDCC3BC1E3C24F700D59B23 /* AllUserController.swift */,
+				5FDCC3BE1E3C250E00D59B23 /* AllUserCell.swift */,
+				5FDCC3C21E3C5D6000D59B23 /* AdminFeedbackViewController.swift */,
+				5FDCC3C41E3C5D7900D59B23 /* AdminFeedbackTableViewCell.swift */,
+			);
+			name = "Admin Controllers";
+			sourceTree = "<group>";
+		};
+		720A3BCE69A273F51C808A7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98E4003C5F1D60DE5C45E136 /* Pods-RealTimeParkingBookingSystem.debug.xcconfig */,
+				F5F2F0253BBCA62630C3A2DB /* Pods-RealTimeParkingBookingSystem.release.xcconfig */,
+				9937E879E6D3CB1014E22ED3 /* Pods-RealTimeParkingBookingSystemTests.debug.xcconfig */,
+				567FD3CB9849D78EC0476944 /* Pods-RealTimeParkingBookingSystemTests.release.xcconfig */,
+				C94AD6D0570E65C2FD051EAA /* Pods-RealTimeParkingBookingSystemUITests.debug.xcconfig */,
+				CEB196F7F63A6F7D321C9A81 /* Pods-RealTimeParkingBookingSystemUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CC995174459EE44E45448BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4877408D94E8BF5BEB7A6E /* Pods_RealTimeParkingBookingSystem.framework */,
+				4836881A2DA1571327AB70F5 /* Pods_RealTimeParkingBookingSystemTests.framework */,
+				081692738A472D97DEDBB83C /* Pods_RealTimeParkingBookingSystemUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F8754BC1E3AFEED00640A24 /* RealTimeParkingBookingSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F8754E51E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystem" */;
+			buildPhases = (
+				D7650D1A90ED9A35C3DE876B /* [CP] Check Pods Manifest.lock */,
+				5F8754B91E3AFEED00640A24 /* Sources */,
+				5F8754BA1E3AFEED00640A24 /* Frameworks */,
+				5F8754BB1E3AFEED00640A24 /* Resources */,
+				06F8239A44C031D9678A9BC4 /* [CP] Embed Pods Frameworks */,
+				EBB3B8055F743630BCCA563C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeParkingBookingSystem;
+			productName = RealTimeParkingBookingSystem;
+			productReference = 5F8754BD1E3AFEED00640A24 /* RealTimeParkingBookingSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F8754D01E3AFEED00640A24 /* RealTimeParkingBookingSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F8754E81E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystemTests" */;
+			buildPhases = (
+				989740CB677B387DC66AFA3C /* [CP] Check Pods Manifest.lock */,
+				5F8754CD1E3AFEED00640A24 /* Sources */,
+				5F8754CE1E3AFEED00640A24 /* Frameworks */,
+				5F8754CF1E3AFEED00640A24 /* Resources */,
+				B486A1A98E5F4C32502BC322 /* [CP] Embed Pods Frameworks */,
+				3E9C48199AE65F3795AFEB7D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F8754D31E3AFEED00640A24 /* PBXTargetDependency */,
+			);
+			name = RealTimeParkingBookingSystemTests;
+			productName = RealTimeParkingBookingSystemTests;
+			productReference = 5F8754D11E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F8754DB1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F8754EB1E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystemUITests" */;
+			buildPhases = (
+				9EA1856749BD806B3A97A021 /* [CP] Check Pods Manifest.lock */,
+				5F8754D81E3AFEED00640A24 /* Sources */,
+				5F8754D91E3AFEED00640A24 /* Frameworks */,
+				5F8754DA1E3AFEED00640A24 /* Resources */,
+				3FC9B410D32D54424BB9FB22 /* [CP] Embed Pods Frameworks */,
+				168A984D40609ED5FBFB2D47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F8754DE1E3AFEED00640A24 /* PBXTargetDependency */,
+			);
+			name = RealTimeParkingBookingSystemUITests;
+			productName = RealTimeParkingBookingSystemUITests;
+			productReference = 5F8754DC1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F8754B51E3AFEED00640A24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nasrullah Khan";
+				TargetAttributes = {
+					5F8754BC1E3AFEED00640A24 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MCG7B5LH7L;
+						ProvisioningStyle = Automatic;
+					};
+					5F8754D01E3AFEED00640A24 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MCG7B5LH7L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F8754BC1E3AFEED00640A24;
+					};
+					5F8754DB1E3AFEED00640A24 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MCG7B5LH7L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F8754BC1E3AFEED00640A24;
+					};
+				};
+			};
+			buildConfigurationList = 5F8754B81E3AFEED00640A24 /* Build configuration list for PBXProject "RealTimeParkingBookingSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F8754B41E3AFEED00640A24;
+			productRefGroup = 5F8754BE1E3AFEED00640A24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F8754BC1E3AFEED00640A24 /* RealTimeParkingBookingSystem */,
+				5F8754D01E3AFEED00640A24 /* RealTimeParkingBookingSystemTests */,
+				5F8754DB1E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F8754BB1E3AFEED00640A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8754CB1E3AFEED00640A24 /* LaunchScreen.storyboard in Resources */,
+				5F8754F81E3B019400640A24 /* GoogleService-Info.plist in Resources */,
+				5F8754C81E3AFEED00640A24 /* Assets.xcassets in Resources */,
+				5F8754C61E3AFEED00640A24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754CF1E3AFEED00640A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754DA1E3AFEED00640A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F8239A44C031D9678A9BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystem/Pods-RealTimeParkingBookingSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		168A984D40609ED5FBFB2D47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystemUITests/Pods-RealTimeParkingBookingSystemUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E9C48199AE65F3795AFEB7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystemTests/Pods-RealTimeParkingBookingSystemTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FC9B410D32D54424BB9FB22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystemUITests/Pods-RealTimeParkingBookingSystemUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		989740CB677B387DC66AFA3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA1856749BD806B3A97A021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B486A1A98E5F4C32502BC322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystemTests/Pods-RealTimeParkingBookingSystemTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7650D1A90ED9A35C3DE876B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB3B8055F743630BCCA563C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimeParkingBookingSystem/Pods-RealTimeParkingBookingSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F8754B91E3AFEED00640A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8754EF1E3AFF2600640A24 /* MConstant.swift in Sources */,
+				5F8754F61E3AFFEC00640A24 /* SignUp.swift in Sources */,
+				5FDCC3B41E3BF97500D59B23 /* UserRequestsViewController.swift in Sources */,
+				5FDCC3C71E3C5EEA00D59B23 /* AdminServices.swift in Sources */,
+				5F8755001E3B0B4B00640A24 /* UserType.swift in Sources */,
+				5FDCC3B01E3B385B00D59B23 /* SlotsViewController.swift in Sources */,
+				5FDCC3BA1E3C1B3900D59B23 /* UserRequestStruct.swift in Sources */,
+				5FDCC3AA1E3B139D00D59B23 /* ParkingArea.swift in Sources */,
+				5FDCC3B21E3B38D500D59B23 /* SlotCell.swift in Sources */,
+				5FDCC3BF1E3C250E00D59B23 /* AllUserCell.swift in Sources */,
+				5FDCC3A61E3B10AA00D59B23 /* UserMainController.swift in Sources */,
+				5FDCC3C11E3C5B1200D59B23 /* UserFeedbackSubmissionVC.swift in Sources */,
+				5FDCC3C31E3C5D6000D59B23 /* AdminFeedbackViewController.swift in Sources */,
+				5FDCC3AC1E3B149800D59B23 /* ParkingServices.swift in Sources */,
+				5F8754FE1E3B0B4100640A24 /* User.swift in Sources */,
+				5FDCC3AE1E3B183100D59B23 /* Slot.swift in Sources */,
+				5F8754FC1E3B0B1900640A24 /* AuthService.swift in Sources */,
+				5FDCC3C51E3C5D7900D59B23 /* AdminFeedbackTableViewCell.swift in Sources */,
+				5FDCC3B61E3BF99900D59B23 /* UserRequestsCell.swift in Sources */,
+				5F8754C11E3AFEED00640A24 /* AppDelegate.swift in Sources */,
+				5FDCC3B81E3BFCBC00D59B23 /* UserServices.swift in Sources */,
+				5FDCC3BD1E3C24F700D59B23 /* AllUserController.swift in Sources */,
+				5F8754F11E3AFF3300640A24 /* SignIn.swift in Sources */,
+				5FDCC3A81E3B10C900D59B23 /* ParkingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754CD1E3AFEED00640A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8754D61E3AFEED00640A24 /* RealTimeParkingBookingSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8754D81E3AFEED00640A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8754E11E3AFEED00640A24 /* RealTimeParkingBookingSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F8754D31E3AFEED00640A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F8754BC1E3AFEED00640A24 /* RealTimeParkingBookingSystem */;
+			targetProxy = 5F8754D21E3AFEED00640A24 /* PBXContainerItemProxy */;
+		};
+		5F8754DE1E3AFEED00640A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F8754BC1E3AFEED00640A24 /* RealTimeParkingBookingSystem */;
+			targetProxy = 5F8754DD1E3AFEED00640A24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F8754C41E3AFEED00640A24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F8754C51E3AFEED00640A24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F8754C91E3AFEED00640A24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F8754CA1E3AFEED00640A24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F8754E31E3AFEED00640A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F8754E41E3AFEED00640A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F8754E61E3AFEED00640A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E4003C5F1D60DE5C45E136 /* Pods-RealTimeParkingBookingSystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F8754E71E3AFEED00640A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F2F0253BBCA62630C3A2DB /* Pods-RealTimeParkingBookingSystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5F8754E91E3AFEED00640A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9937E879E6D3CB1014E22ED3 /* Pods-RealTimeParkingBookingSystemTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeParkingBookingSystem.app/RealTimeParkingBookingSystem";
+			};
+			name = Debug;
+		};
+		5F8754EA1E3AFEED00640A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567FD3CB9849D78EC0476944 /* Pods-RealTimeParkingBookingSystemTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimeParkingBookingSystem.app/RealTimeParkingBookingSystem";
+			};
+			name = Release;
+		};
+		5F8754EC1E3AFEED00640A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94AD6D0570E65C2FD051EAA /* Pods-RealTimeParkingBookingSystemUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RealTimeParkingBookingSystem;
+			};
+			name = Debug;
+		};
+		5F8754ED1E3AFEED00640A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB196F7F63A6F7D321C9A81 /* Pods-RealTimeParkingBookingSystemUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MCG7B5LH7L;
+				INFOPLIST_FILE = RealTimeParkingBookingSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Panacloud.RealTimeParkingBookingSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RealTimeParkingBookingSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F8754B81E3AFEED00640A24 /* Build configuration list for PBXProject "RealTimeParkingBookingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8754E31E3AFEED00640A24 /* Debug */,
+				5F8754E41E3AFEED00640A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F8754E51E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8754E61E3AFEED00640A24 /* Debug */,
+				5F8754E71E3AFEED00640A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F8754E81E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8754E91E3AFEED00640A24 /* Debug */,
+				5F8754EA1E3AFEED00640A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F8754EB1E3AFEED00640A24 /* Build configuration list for PBXNativeTarget "RealTimeParkingBookingSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8754EC1E3AFEED00640A24 /* Debug */,
+				5F8754ED1E3AFEED00640A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F8754B51E3AFEED00640A24 /* Project object */;
+}
